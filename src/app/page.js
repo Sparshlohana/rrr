@@ -1,3 +1,9 @@
+import LoginPage from "./LoginPage";
+
 export default function Home() {
-  return <>Hello from another world</>;
+  return (
+    <>
+      <LoginPage />
+    </>
+  );
 }
