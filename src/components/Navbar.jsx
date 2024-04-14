@@ -9,7 +9,7 @@ const Navbar = () => {
                     <Link href={"/"}>RRR</Link>
                 </h1>
             </div>
-            <ul className='flex font-bold gap-5 p-4 text-lg'>
+            <ul className='flex font-bold gap-8 p-4 text-lg ml-16'>
                 <li><Link href={"/"}>Home</Link></li>
                 <li><Link href={"/service"}>Our Service</Link></li>
                 <li><Link href={"/contact"}>Contact Us</Link></li>
@@ -17,7 +17,7 @@ const Navbar = () => {
                 <li><Link href={"/pricing"}>Pricing</Link></li>
             </ul>
             <div className='flex items-center'>
-                <button className='px-3 py-1 bg-blue-600 border-2 border-gray-800 rounded-full text-white'>Call 24/7: 8154000250</button>
+                <button className='px-3 py-1 bg-blue-600 border-2 border-gray-800 rounded-full text-white'>Call 24/7: 7874712018</button>
             </div>
         </nav>
     )
