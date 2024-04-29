@@ -526,17 +526,12 @@ const Login = () => {
               fill="#B55B52"
             />
           </svg>
-          <defs>
-            <clipPath id="clip0_515_1135">
-              <rect width="720" height="764" fill="white" />
-            </clipPath>
-          </defs>
         </svg>
       </div>
 
       <div className="flex justify-center items-start flex-col w-[500px]">
         <div className="flex justify-center h-[80vh] items-center flex-col gap-3">
-          <h2 className="font-bold h-[30px] flex justify-start w-full text-2xl">
+          <h2 className="font-bold flex justify-start w-full text-4xl mb-3">
             Create Account
           </h2>
 
@@ -585,6 +580,21 @@ const Login = () => {
               <Link className="login-text ml-1" href={"/"}>
                 login
               </Link>
+            </div>
+            <div className="flex -mt-4 justify-center items-center gap-4">
+              <div>
+                <span>
+                  <hr className="h-px w-36 my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+                </span>
+              </div>
+              <div>
+                <span>OR</span>
+              </div>
+              <div>
+                <span>
+                  <hr className="h-px w-36 my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+                </span>
+              </div>
             </div>
           </form>
         </div>
