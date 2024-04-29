@@ -10,14 +10,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <head>
         <link rel="shortcut icon" href="/icon.png" type="image/x-icon"></link>
       </head>
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <Navbar />
-        {children}
+        <main className="max-w-[1290px] px-2 sm:px-0 m-auto"> {children} </main>
       </body>
     </html>
   );
