@@ -18,7 +18,9 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className} suppressHydrationWarning={true}>
         <Navbar />
-        <main className="max-w-[1290px] px-2 sm:px-0 m-auto"> {children} </main>
+        <main className="h-fit">
+          {children}
+        </main>
       </body>
     </html>
   );

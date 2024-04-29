@@ -4,20 +4,13 @@
     rgba(64, 123, 255, 1),
     rgba(255, 255, 255, 1)
   );
+  width: 60vw;
 }
 
-input {
+/* input {
   height: 30px !important;
   padding: 20px 10px;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px;
   outline: none;
-}
-
-.create-btn {
-  background-color: rgba(83, 86, 255, 1);
-}
-
-.login-text {
-  color: blue;
-}
+} */
