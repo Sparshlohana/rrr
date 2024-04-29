@@ -6,11 +6,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Rapid Road ResQ",
-  description: "Rapid Road ResQ is a application that helps drivers in distress to get help quickly and easily.",
+  description:
+    "Rapid Road ResQ is a application that helps drivers in distress to get help quickly and easily.",
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <head>
