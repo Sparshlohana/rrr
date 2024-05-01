@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Login = () => {
     return (
-        <section className='flex justify-center items-center w-full'>
+        <section className='flex justify-center items-center w-full flex-col sm:flex-row'>
             <div className='img flex  items-center h-[100dvh]'>
                 <LoginImage />
             </div>

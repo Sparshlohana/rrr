@@ -12,11 +12,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html lang="en" >
       <head>
         <link rel="shortcut icon" href="/icon.png" type="image/x-icon"></link>
       </head>
-      <body className={inter.className} suppressHydrationWarning={true}>
+      <body className={inter.className} >
         <Navbar />
         <main className="h-fit">
           {children}
