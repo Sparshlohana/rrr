@@ -8,10 +8,15 @@ import { GoogleLogin } from "@react-oauth/google";
 
 const Login = () => {
   const responseMessage = (response) => {
-    console.log(response);
+    console.log("Google authentication successful:", response);
+
+    if (response && response.profileObj) {
+      const userInfo = response.profileObj;
+      console.log(userInfo);
+    }
   };
   const errorMessage = (error) => {
-    console.log(error);
+    console.error("Google authentication error:", error);
   };
   return (
     <section className="flex items-center w-full flex-col sm:flex-row">
@@ -92,7 +97,6 @@ const Login = () => {
                 theme="filled_blue"
                 size="medium"
                 type="standard"
-                width={"200px"}
                 onSuccess={responseMessage}
                 onError={errorMessage}
               />

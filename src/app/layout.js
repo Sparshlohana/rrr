@@ -17,10 +17,10 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="shortcut icon" href="/icon.png" type="image/x-icon"></link>
       </head>
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <Navbar />
         <main className="h-fit">
-          <GoogleOAuthProvider clientId="869395302751-bktjqm9l1v0k9jvjughn0gqbu9l9p0k1.apps.googleusercontent.com">
+          <GoogleOAuthProvider clientId="321577147798-ol998bnbukagummc0r34chij4aqg2pat.apps.googleusercontent.com">
             {children}
           </GoogleOAuthProvider>
         </main>
