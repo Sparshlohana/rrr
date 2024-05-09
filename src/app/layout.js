@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,15 +13,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" >
+    <html lang="en">
       <head>
         <link rel="shortcut icon" href="/icon.png" type="image/x-icon"></link>
       </head>
-      <body className={inter.className} >
+      <body className={inter.className}>
         <Navbar />
-        <main className="h-fit">
-          {children}
-        </main>
+        <main className="h-fit">{children}</main>
+        <Footer />
       </body>
     </html>
   );
