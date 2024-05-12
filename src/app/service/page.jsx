@@ -16,9 +16,9 @@ const Service = () => {
               Our Services
             </h1>
             <p className="text-xl sm:text-2xl font-medium text-white">
-              Don't worry, we've got you covered! Our reliable roadside
+              {`Don't worry, we've got you covered! Our reliable roadside
               assistance service is just a call away, ready to help you get back
-              on the road swiftly and safely.
+              on the road swiftly and safely.`}
             </p>
           </div>
         </div>
