@@ -9,10 +9,8 @@ const ServiceCard = ({ service }) => {
         alt={service.title}
         className="w-20 h-20 object-cover"
       />
-      <h3 className="font-bold text-xl sm:text-4xl md:text-2xl py-4">
-        {service.title}
-      </h3>
-      <p className="font-medium leading-7 text-base sm:text-3xl md:text-base tracking-tight text-slate-500">
+      <h3 className="font-bold text-xl md:text-2xl py-4">{service.title}</h3>
+      <p className="font-medium leading-7 text-base md:text-base tracking-tight text-slate-500">
         {service.description}
       </p>
     </div>

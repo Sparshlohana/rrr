@@ -6,7 +6,7 @@ const Footer = () => {
       className="py-20 w-full bg-cover bg-no-repeat min-h-80"
       style={{ backgroundImage: "url('/footer-bg.png')" }}
     >
-      <div className="footer-inner-wrapper max-w-8xl m-auto grid sm:grid-cols-2 md:grid-cols-5 justify-between gap-4 px-4 md:px-0 pt-28">
+      <div className="footer-inner-wrapper max-w-8xl m-auto grid sm:grid-cols-2 md:grid-cols-5 justify-between gap-4 px-4 pt-28">
         {/*
          ** footer-about Start
          */}

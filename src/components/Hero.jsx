@@ -17,8 +17,10 @@ const Hero = () => {
         <h2 className="uppercase text-[#5356FF] font-extrabold text-2xl">
           emergency road service provider
         </h2>
-        <h1 className="text-8xl font-extrabold">Need Instant Roadside Help?</h1>
-        <p className="text-2xl font-medium leading-relaxed">
+        <h1 className="text-8xl font-black tracking-tight">
+          Need Instant Roadside Help?
+        </h1>
+        <p className="text-2xl font-medium leading-relaxed tracking-tight">
           {
             "Don't worry, we've got you covered! Our reliable roadside assistance service is just a call away, ready to help you get back on the road swiftly and safely."
           }
