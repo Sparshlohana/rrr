@@ -10,7 +10,7 @@ const WhyUs = () => {
           "linear-gradient(0deg, rgba(247,251,255,0.5) 0%, rgba(222,181,255,1) 50%, rgba(247,251,255,0.5) 100%)",
       }}
     >
-      <div className="whyus-inner max-w-8xl m-auto grid md:grid-cols-2 justify-between gap-4 px-4 md:px-0 py-10 md:py-16">
+      <div className="whyus-inner max-w-8xl m-auto grid md:grid-cols-2 justify-between gap-4 px-4 py-10 md:py-16">
         {/*
          ** Why Us Left Section
          */}
@@ -21,7 +21,7 @@ const WhyUs = () => {
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight capitalize md:leading-tight">
             24/7 towing services is what we do
           </h2>
-          <p className="text-xl font-medium py-4 w-4/5 text-slate-500">
+          <p className="text-xl font-medium py-4 md:w-4/5 text-slate-500">
             We are a well-equipped towing service available to help with towing
             a car 24/7 we provide a fast, affordable, friendly, and reliable car
             towing service.
@@ -46,7 +46,7 @@ const WhyUs = () => {
               <h3 className="text-2xl font-extrabold">
                 We can tow any vehicle
               </h3>
-              <p className="text-lg font-medium py-2 w-4/5 text-slate-500">
+              <p className="text-lg font-medium py-2 md:w-4/5 text-slate-500">
                 We operate new, clean and professional towing vehicles and
                 equipment.
               </p>
@@ -71,7 +71,7 @@ const WhyUs = () => {
               <h3 className="text-2xl font-extrabold">
                 Fast, safe and affordable
               </h3>
-              <p className="text-lg font-medium py-2 w-4/5 text-slate-500">
+              <p className="text-lg font-medium py-2 md:w-4/5 text-slate-500">
                 We provide a fast, affordable, friendly, and reliable car towing
                 service.
               </p>
