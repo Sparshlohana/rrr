@@ -10,7 +10,7 @@ const Service = () => {
         {/*
          ** Feature Image Start
          */}
-        <div className="feature-img bg-service-gradient-radial bg-cover bg-center h-[515px] mt-[70px] relative">
+        <div className="feature-img bg-service-gradient-radial bg-cover bg-center h-[515px] relative">
           <div className="services-headings w-full md:w-auto absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 text-center leading-relaxed px-4">
             <h1 className="text-7xl md:text-8xl font-black w-full text-white mb-4 tracking-tight">
               Our Services

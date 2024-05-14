@@ -6,11 +6,11 @@ const Footer = () => {
       className="py-20 w-full bg-cover bg-no-repeat min-h-80"
       style={{ backgroundImage: "url('/footer-bg.png')" }}
     >
-      <div className="footer-inner-wrapper max-w-8xl m-auto grid sm:grid-cols-2 md:grid-cols-5 justify-between gap-4 px-4 pt-28">
+      <div className="footer-inner-wrapper max-w-8xl m-auto grid sm:grid-cols-2 md:grid-cols-6 justify-between gap-8 md:gap-24 px-4 pt-28">
         {/*
          ** footer-about Start
          */}
-        <div className="footer-about">
+        <div className="footer-about md:col-span-2">
           <h4 className="text-white font-black text-3xl">RRR</h4>
           <div className="flex items-center py-4 gap-2">
             <span>
@@ -92,7 +92,7 @@ const Footer = () => {
         {/*
          ** Our Product Start
          */}
-        <div className="our-product">
+        <div className="our-product md:col-start-3">
           <h4 className="text-white text-xl pb-6 font-extrabold">
             Our Product
           </h4>
@@ -109,7 +109,7 @@ const Footer = () => {
         {/*
          ** Resourses Start
          */}
-        <div className="footer-resourses">
+        <div className="footer-resourses md:col-start-4">
           <h4 className="text-white text-xl pb-6 font-extrabold">Resources</h4>
           <ul>
             <li className="text-white py-1 font-medium">Download</li>
@@ -125,7 +125,7 @@ const Footer = () => {
         {/*
          ** About Start
          */}
-        <div className="footer-about">
+        <div className="footer-about md:col-start-5">
           <h4 className="text-white text-xl pb-6 font-extrabold">About RRR</h4>
           <ul>
             <li className="text-white py-1 font-medium">Why choose us</li>
@@ -140,7 +140,7 @@ const Footer = () => {
         {/*
          ** Follow Us Start
          */}
-        <div className="footer-about">
+        <div className="footer-about md:col-start-6">
           <h4 className="text-white text-xl pb-6 font-extrabold">Follow Us</h4>
           <ul className="flex items-center gap-4">
             <li className="text-white">
