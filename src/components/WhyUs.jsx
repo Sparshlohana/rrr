@@ -18,7 +18,7 @@ const WhyUs = () => {
           <h3 className="text-xl font-extrabold uppercase py-4 text-[#727272]">
             Why us
           </h3>
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight capitalize md:leading-tight">
+          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight capitalize md:leading-tight">
             24/7 towing services is what we do
           </h2>
           <p className="text-xl font-medium py-4 md:w-4/5 text-slate-500">
