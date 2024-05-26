@@ -23,7 +23,7 @@ const Login = () => {
     <GoogleOAuthProvider>
       <section className="flex items-center w-full flex-col sm:flex-row">
         <div className="img flex items-center h-[100dvh]  ">
-          <LoginImage className="sm:h-[400px] md:h-[500px] " />
+          <LoginImage className="sm:h-[400px] md:h-[600px] " />
         </div>
 
         <div class="flex justify-center items-start flex-col w-1/2">
