@@ -28,7 +28,10 @@ const userSchema = new mongoose.Schema({
     type: String,
   },
   otp: {
-    type: Number,
+    type: String,
+  },
+  otpExpiration: {
+    type: Date,
   },
   role: {
     type: String,

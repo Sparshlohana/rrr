@@ -1,8 +1,21 @@
 import { connect } from "../../DBconfig";
 import { NextRequest, NextResponse } from "next/server";
+import otpGenerator from "otp-generator";
 import bcryptjs from "bcryptjs";
 import User from "../UserModel";
+import { sendOTP } from "../sendOTP";
 connect();
+
+async function generateOTP() {
+  let otp = await otpGenerator.generate(4, {
+    lowerCaseAlphabets: false,
+    upperCaseAlphabets: false,
+    specialChars: false,
+  });
+  const otpExpiration = new Date(Date.now() + 1 * 60 * 1000); // OTP valid for 1 minutes
+
+  return { otp, otpExpiration };
+}
 
 export async function POST(request) {
   try {
@@ -38,6 +51,9 @@ export async function POST(request) {
           { status: 404 }
         );
     }
+
+    const { otp, otpExpiration } = await generateOTP();
+
     const user = await User.findOne({ email });
 
     if (user) {
@@ -64,11 +80,13 @@ export async function POST(request) {
             firstName,
             lastName,
             email,
+            otp,
+            otpExpiration,
             password: hashedPassword,
           });
 
     const savedUser = await newUser.save();
-
+    await sendOTP(email, otp);
     return NextResponse.json({
       message: "signUp successfully",
       success: true,
