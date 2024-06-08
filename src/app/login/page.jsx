@@ -2,7 +2,11 @@
 
 import React from "react";
 import "../login/login.css";
-import { FacebookIcon, LoginImage, SignInWithGoogleIcon } from "@/components/Icons";
+import {
+  FacebookIcon,
+  LoginImage,
+  SignInWithGoogleIcon,
+} from "@/components/Icons";
 import Link from "next/link";
 import { GoogleLogin, GoogleOAuthProvider } from "@react-oauth/google";
 
@@ -34,16 +38,37 @@ const Login = () => {
 
             <form class="flex flex-col gap-3">
               <div class="flex justify-center gap-3 items-center">
-                <input class="h-[30px] py-5 px-2 rounded-3xl shadow-md outline-none" required type="text"
-                  minLength="4" maxLength="8" placeholder="First Name" />
-                <input class="h-[30px] py-5 px-2 rounded-3xl shadow-md outline-none" required type="text"
-                  minLength="4" maxLength="8" placeholder="Last Name" />
+                <input
+                  class="h-[30px] py-5 px-2 rounded-3xl shadow-md outline-none"
+                  required
+                  type="text"
+                  minLength="4"
+                  maxLength="8"
+                  placeholder="First Name"
+                />
+                <input
+                  class="h-[30px] py-5 px-2 rounded-3xl shadow-md outline-none"
+                  required
+                  type="text"
+                  minLength="4"
+                  maxLength="8"
+                  placeholder="Last Name"
+                />
               </div>
 
-              <input class="h-[30px] py-5 px-2 rounded-3xl shadow-md outline-none" required type="email"
-                placeholder="Email Address" />
-              <input class="h-[30px] py-5 px-2 rounded-3xl shadow-md outline-none" required type="password"
-                minLength="8" placeholder="Password" />
+              <input
+                class="h-[30px] py-5 px-2 rounded-3xl shadow-md outline-none"
+                required
+                type="email"
+                placeholder="Email Address"
+              />
+              <input
+                class="h-[30px] py-5 px-2 rounded-3xl shadow-md outline-none"
+                required
+                type="password"
+                minLength="8"
+                placeholder="Password"
+              />
 
               <div class="flex justify-center items-center">
                 <button class="bg-[#5356ff] rounded-[30px] font-semibold text-md py-2 text-white w-full">
@@ -76,27 +101,28 @@ const Login = () => {
                 <GoogleLogin shape="circle" theme="filled_blue" size="medium" type="standard"
                   onSuccess={responseMessage} onError={errorMessage} />
               </div> */}
-
             </form>
             <div class="flex gap-2 items-center ">
-              <button
-                class="w-[200px] py-2 flex justify-center items-center gap-2 bg-white  shadow-md rounded-full ">
+              <button class="w-[200px] py-2 flex justify-center items-center gap-2 bg-white  shadow-md rounded-full ">
                 <SignInWithGoogleIcon />
                 <span class="">Continue with Google</span>
-
               </button>
-              <button
-                class="w-[220px] py-2 flex justify-center items-center gap-2 bg-white  shadow-md rounded-full ">
+              <button class="w-[220px] py-2 flex justify-center items-center gap-2 bg-white  shadow-md rounded-full ">
                 <FacebookIcon />
                 <span>Continue with Facebook</span>
-
               </button>
-
             </div>
-            <h1 class="h-2 text-xs">By signing up, you agree to the <span
-              class="font-bold underline text-gray-800 font-mona-sans">Terms of Service</span> {`and acknowledge
-              you've read our`} <span class="font-bold underline text-gray-800 font-mona-sans">Privacy Policy.</span> </h1>
-
+            <h2 class="h-2 text-xs">
+              By signing up, you agree to the{" "}
+              <span class="font-bold underline text-gray-800 font-mona-sans">
+                Terms of Service
+              </span>{" "}
+              {`and acknowledge
+              you've read our`}{" "}
+              <span class="font-bold underline text-gray-800 font-mona-sans">
+                Privacy Policy.
+              </span>{" "}
+            </h2>
           </div>
         </div>
       </section>

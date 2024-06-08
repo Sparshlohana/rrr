@@ -15,7 +15,10 @@ module.exports = {
       backgroundImage: {
         "service-gradient-radial":
           "radial-gradient(circle, rgba(0,0,44,.5) 0%, rgba(255,255,255,0) 50%, rgba(0,0,44,.5) 100%), url('/services-featured-img.png')",
+        "contact-gradient":
+          "linear-gradient(180deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.4) 48.4%, rgba(0, 0, 0, 0.64) 100%), url('/contactusheroimage.svg')",
       },
+     
       maxWidth: {
         "8xl": "1290px",
       },
