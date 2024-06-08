@@ -42,20 +42,21 @@ const Contact = () => {
           style={{
             background: "linear-gradient(180deg, #b6b7ff 0%, #f7fbff 100%)",
           }}
-          className="h-[800px] flex flex-wrap"
+          className="h-[800px] w-full flex flex-wrap"
         >
-          <div className="flex  max-w-7xl h-[700px]  w-full  m-auto justify-between items-center">
+          <div className="flex flex-wrap px-4 md:px-0 max-w-7xl h-[700px] m-auto gap-14  w-full   justify-between items-center">
             {/* Contact Info  */}
 
-            <div className="flex flex-wrap gap-9 w-1/2 flex-col">
+            <div className="flex flex-wrap gap-9  flex-col">
               {contactInfo.map((contact) => {
                 return (
                   <div className="flex gap-3 items-center" key={contact.id}>
                     <div>
                       <img
-                        className="h-9"
+                        className="h-9 w-9"
                         src={contact.url}
                         alt="Location Image"
+                        
                       />
                     </div>
                     <div>
@@ -80,11 +81,11 @@ const Contact = () => {
                 </h2>
                 <p className="font-medium text-xs">
                   {`Let’s`} align our constellations! Reach out and let the
-                  magic of collaboration <br /> illuminate our skies.
+                  magic of collaboration illuminate our skies.
                 </p>
-                <div class="flex justify-center gap-3 items-center">
+                <div class="flex flex-wrap justify-center gap-3 items-center">
                   <input
-                    class="h-[30px] py-5 px-2 rounded-3xl shadow-md outline-none"
+                    class="h-[30px] w-full py-5 px-2 rounded-3xl shadow-md outline-none"
                     required
                     type="text"
                     minLength="4"
@@ -92,7 +93,7 @@ const Contact = () => {
                     placeholder="First Name"
                   />
                   <input
-                    class="h-[30px] py-5 px-2 rounded-3xl shadow-md outline-none"
+                    class="h-[30px] w-full py-5 px-2 rounded-3xl shadow-md outline-none"
                     required
                     type="text"
                     minLength="4"
