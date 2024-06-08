@@ -76,11 +76,11 @@ const Contact = () => {
             <div>
               <form class="flex flex-col flex-wrap gap-3">
                 <h2 className="font-bold text-black text-lg">
-                  Let’s connect constellations
+                  {`Let’s`} connect constellations
                 </h2>
                 <p className="font-medium text-xs">
-                  Let's align our constellations! Reach out and let the magic of
-                  collaboration <br /> illuminate our skies.
+                  {`Let’s`} align our constellations! Reach out and let the
+                  magic of collaboration <br /> illuminate our skies.
                 </p>
                 <div class="flex justify-center gap-3 items-center">
                   <input
